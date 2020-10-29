@@ -31,6 +31,8 @@ import switchToParentFrame from './switch-to-parent-frame';
 import getElementProperty from './get-element-property';
 import getComputedLabel from './get-computed-label';
 import getElementCssValue from './get-element-css-value';
+import performActions from './peform-actions';
+import releaseActions from './release-actions.ts';
 
 export default {
   [COMMANDS.DELETE_SESSION]: deleteSession,
@@ -65,4 +67,6 @@ export default {
   [COMMANDS.SWITCH_TO_PARENT_FRAME]: switchToParentFrame,
   [COMMANDS.ELEMENT_SELECTED]: elementSelected,
   [COMMANDS.GET_COMPUTED_LABEL]: getComputedLabel,
+  [COMMANDS.PERFORM_ACTIONS]: performActions,
+  [COMMANDS.RELEASE_ACTIONS]: releaseActions,
 };
